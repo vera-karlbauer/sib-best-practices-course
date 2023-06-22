@@ -1,6 +1,9 @@
 # Data
 .rda
 
+# Results
+.txt
+
 # History files
 .Rhistory
 .Rapp.history
