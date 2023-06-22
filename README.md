@@ -6,5 +6,5 @@ This code extract is from a project where I investigate saliva methylation at 49
 
 ## Code structure:
 - **00_functions.R** contains a function used to loop a linear model with pre-specified covariates over 49 CpGs.
-- **01_analysis.Rmd*** analyzes maltreatment effects at T0, runs summary statistics on the results, and exports the results as a table.
+- **01_analysis_maltreatment.Rmd*** analyzes maltreatment effects at T0, runs summary statistics on the results, and exports the results as a table.
 - **Data** cannot be shared in order to protect participants identity.  
