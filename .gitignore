@@ -4,6 +4,9 @@
 # Results
 .txt
 
+# DS store
+.DS_Store
+
 # History files
 .Rhistory
 .Rapp.history
