@@ -1,7 +1,10 @@
-#ignore all kind of files 
+# ignore DS_Store
+.DS_Store
+
+# ignore all kind of files 
 *.*
 
-#except 
+# except 
 !.gitignore
 !*.R
 !*.sh
