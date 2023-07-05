@@ -14,4 +14,4 @@ load("./01_data/all_t0.rda")
 loop_lm_simple(data = all_t0, predictor_name = "Case.Control", object_name = "diffmeth_malt_t0")
 
 ### save resultsobject as .rda
-save(loop_lm_simple, file = "04_unit_testing/resultsobj_malt_t0.Rda")
+save(diffmeth_malt_t0, file = "04_unit_testing/resultsobj_for_testing.Rda")
