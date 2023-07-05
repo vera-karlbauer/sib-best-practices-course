@@ -1,8 +1,20 @@
-### load packages
+# load packages
 library(dplyr)
 library(rmarkdown)
+library(diffr)
 
-### load data
-load("04_unit_testing/resultsobj_malt_t0.Rda")
+# load results to test against
+load("04_unit_testing/resultsobj_for_testing.Rda")
 
-### check results of new function against tesing data and report differences
+# load data
+load("01_data/all_t0.Rda")
+
+# source function
+source("02_analysis/00_functions/setup_resultsobj.R")
+
+# run function on data
+resultsobj <- setup_resultsobj(data = all_t0)
+
+# test whether first column is identical
+diffmeth_malt_t0[, 1] == resultsobj[,1]
+
