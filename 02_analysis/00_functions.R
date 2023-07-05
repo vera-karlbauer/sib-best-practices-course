@@ -40,7 +40,7 @@ loop_lm_simple <- function(data, predictor_name, object_name){
   }
   # results object as data frame
   resultsobj <- as.data.frame(resultsobj)
-  # rename columns in results onjext
+  # rename columns in results object
   colnames(resultsobj) = c("CpG","adj.R","p", "coef")
   # set to numeric
   resultsobj <- resultsobj %>%
