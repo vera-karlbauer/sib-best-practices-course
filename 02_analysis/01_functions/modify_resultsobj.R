@@ -3,7 +3,7 @@ modify_lm <- function(resultsobj){
 resultsobj <- as.data.frame(resultsobj)
 # set to numeric
 resultsobj <- resultsobj %>%
-  mutate(across(! "CpG"), as.numeric)
+  mutate(across(c(- CpG), as.numeric))
 # return
 return(resultsobj)
 }
