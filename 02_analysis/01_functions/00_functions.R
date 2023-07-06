@@ -16,7 +16,7 @@
 #' # Differential methylation for genotype on dataset all_t0
 #' loop_lm_simple(data = all_t0, predictor_name = "genotype", object_name = "diffmeth_geno_t0")
 
-loop_lm_simple <- function(data, predictor_name){
+loop_lm_old <- function(data, predictor_name){
   # set up results object with CpG names
   resultsobj <- cbind(colnames(data[1:49]),colnames(data[1:49]),colnames(data[1:49]),colnames(data[1:49]))
   # loop linear models over all GpGs
